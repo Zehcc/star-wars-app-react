@@ -6,9 +6,11 @@ const FavouritesChars = () => {
     const {favChars, eliminateFavChar} = useFavouritesContext();
   return (
     <ul>
-        {favChars && favChars.map((char)=>{
+        {!favChars.length ? <img className='yodaIMG' src = "https://pngimg.com/uploads/starwars/starwars_PNG32.png" alt= "Yoda"/>
+        : favChars.map((char)=>{
             return(
-                <li key = {char._id} className='characterCard'>
+                
+                  <li key = {char._id} className='characterCard'>
                   <div className='characters'>
                     <img src={char.image} alt={char.name}/>
                     <p>{char.name}</p>
