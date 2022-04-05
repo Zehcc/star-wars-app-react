@@ -13,7 +13,7 @@ const FavouritesChars = () => {
                     <img src={char.image} alt={char.name}/>
                     <p>{char.name}</p>
                   </div>
-                <DeleteBtn size= {30} color = "orange" onClick={()=>eliminateFavChar(char)}/>
+                <DeleteBtn size= {40} color = "orange" onClick={()=>eliminateFavChar(char)}/>
                 </li>
             )
         })}
