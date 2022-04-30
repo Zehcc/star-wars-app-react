@@ -8,7 +8,7 @@ const RegisterForm = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    API.post("/users", JSON.stringify(data)).then((response) => {
+    API.post("/users/register", JSON.stringify(data)).then((response) => {
       console.log(response);
       navigate("/login");
     });
